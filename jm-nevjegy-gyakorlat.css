@@ -4,6 +4,53 @@ body {
   align-items: center;
   height: 250vh;
 }
+
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS reset ends here. */
 /* CSS reset */
 * {
   margin: 0;
@@ -76,13 +123,13 @@ img:hover {
 
 h1, h2 {
   color: darkslategray;
-  font-size:30px;
+  font-size: 3rem;
 }
 
 h3 {
   align-content: center;
   color: #370A1D;
-  font-size: 20px;
+  font-size: 2rem;
   width: 90%;
   padding: 40px;
   border: 1px solid#370A1D;
@@ -90,8 +137,93 @@ h3 {
   margin: 30px;
 }
 
+h4 {
+  align-content: center;
+  color: snow;
+  font-size: 2rem;
+  width: 100%;
+  padding: 20px;
+  /* border: 1px solid#370A1D; */
+  /* border-radius: 10px; */
+  /* margin: 30px; */
+}
+
 p {
   color: #370A1D;
-  font-size: 20px;
+  font-size: 2em;
   font-kerning: auto;
 }
+
+/* Media Queryk */
+
+/* Base Styles */
+
+aside,
+article,
+section {
+	margin-right: 1.096%;
+}
+
+.container {
+	width: 95vw;
+	height: 50.13vh;
+	padding: 1.096%;
+    background-color: gainsboro;
+    width: auto;
+    border-radius: 10px;
+}
+
+aside {
+	width: 32%;
+	height: 100%;
+	float: left;
+    /* background-color: yellow; */
+    background-image: url(assets/Vincennes.jpg);
+}
+
+article {
+	width: 32%;
+	height: 100%;
+	float: left;
+    /* background-color: goldenrod; */
+    background-image: url(assets/Fragonard.jpg);
+}
+
+section {
+	width: 32%;
+	height: 100%;
+	float: right;
+    /* background-color: rosybrown; */
+    background-image: url(assets/PlaceFL.jpg);
+
+@media (max-width: 420px) {
+
+	/* Demonstrational Styles */
+
+	aside,
+	section,
+    article {
+		height: 48%;
+		margin-bottom: 1.096%;
+        
+	}
+
+	/* Layout Styles */
+
+	aside,
+    article,
+	section {
+		float: none;
+		width: auto;
+	}
+
+}
+
+/* Media Query end */
+
+
+
+
+
+
+
